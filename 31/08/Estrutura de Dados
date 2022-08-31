@@ -1,0 +1,100 @@
+[14:57, 29/08/2022] Meu numero:: #include <stdio.h>
+int
+main ()
+{
+char titulo1 [40] = ("Live do Alan");
+char data1 [40] = ("24/09");
+char hora1[40] = ("10:45");
+char plataforma1[40] = ("Facebook");
+char apresentador1[40] = ("Alan José");
+
+  struct live
+  {
+    char titulo[100];
+    char data[40];
+    char hora[40];
+    char plataforma[40];
+    char apresentador[40];
+  };
+  struct live l, *ptr_a;
+  ptr_a=&l;
+  char pesquisar[20];
+  char nome[20];
+  printf("---------------Cadastro de Live---------------");
+  
+  printf("\nTítulo:");
+    scanf("%s", ptr_a->titulo);
+  
+  printf("data:");
+    scanf("%s", &ptr_a->data);
+  
+  printf("\nHora:");
+    scanf("%s", &ptr_a->hora);
+  
+  printf("\nPlataforma:");
+    scanf("%s", &ptr_a->plataforma);
+  
+  printf("\nApresentador:");
+    scanf("%s", &ptr_a->ap…
+[09:00, 31/08/2022] Meu numero:: #include <stdio.h>
+int
+main ()
+{
+char titulo1 [40] = ("Jogando GTA V");
+char data1 [40] = ("24/09");
+char hora1[40] = ("10:45");
+char plataforma1[40] = ("Youtube");
+char apresentador1[40] = ("Alan Kauffman");
+
+  struct live
+  {
+    char titulo[100];
+    char data[40];
+    char hora[40];
+    char plataforma[40];
+    char apresentador[40];
+  };
+  struct live l, *ptr_a;
+  ptr_a=&l;
+  char pesquisar[20];
+  char nome[20];
+  printf("---------------Cadastro de Live---------------");
+  
+  printf("\nTítulo:");
+    scanf("%s", ptr_a->titulo);
+  
+  printf("data:");
+    scanf("%s", &ptr_a->data);
+  
+  printf("\nHora:");
+    scanf("%s", &ptr_a->hora);
+  
+  printf("\nPlataforma:");
+    scanf("%s", &ptr_a->plataforma);
+  
+  printf("\nApresentador:");
+    scanf("%s", &ptr_a->apresentador);
+  
+  printf("\n-------------- Lives Cadastradas --------------");
+  printf("\nTitulo: %s", l.titulo);
+  printf("\nData: %s", l.data);
+  printf("\nHora: %s", l.hora);
+  printf("\nPlataforma: %s", l.plataforma);
+  printf("\nApresentador: %s", l.apresentador);
+    printf("\nDeseja Pesquisar alguma live?");
+    scanf("%s", &pesquisar);
+    if(pesquisar == "Sim");
+        printf("Digite o nome do Apresentador");
+        scanf("%s", &nome);
+    if(nome == "Alan");
+    printf("---------Live Encontrada--------");
+    printf("\nTitulo: %s", &titulo1);
+    printf("\nData: %s", &data1);
+    printf("\nHora: %s", &hora1);
+    printf("\nPlataforma: %s", &plataforma1);
+    printf("\nApresentador: %s", &apresentador1);
+
+  
+ return 0;
+ 
+}
